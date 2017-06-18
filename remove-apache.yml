@@ -1,0 +1,6 @@
+---
+- hosts: webservers
+  become: yes
+  tasks:
+  - name: ensure apache is removed
+    yum: name=httpd state=absent

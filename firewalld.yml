@@ -1,0 +1,11 @@
+---
+- hosts: databases 
+  become: yes
+
+  tasks:
+
+  - name: Enable firewalld
+    service: 
+      name: firewalld 
+      state: stopped 
+      enabled: yes 

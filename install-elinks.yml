@@ -1,0 +1,8 @@
+---
+- hosts: local
+  become: yes
+
+  tasks:
+
+    - name: install elinks
+      action: yum name=elinks state=latest

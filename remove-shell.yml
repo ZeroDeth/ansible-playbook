@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+    - name: remove file
+      shell: rm testfile 
